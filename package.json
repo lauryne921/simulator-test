@@ -1,4 +1,5 @@
 {
+  "type": "module",
   "name": "simulator-test",
   "version": "1.0.0",
   "description": "",
@@ -18,6 +19,6 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/lauryne921/simulator-test/issues"
-  },
+  }, 
   "homepage": "https://github.com/lauryne921/simulator-test#readme"
 }
