@@ -1,4 +1,4 @@
-import { showQuestion } from "./script";
+import { showQuestion } from './script.js';
 
 const questionsData = [
 	{

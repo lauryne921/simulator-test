@@ -155,7 +155,7 @@ function getNextQuestion(currentChoice) {
 }
 
 
-export function showQuestion(idQuestion, numberOfChoices) {
+function showQuestion(idQuestion, numberOfChoices) {
     document.querySelector('.quiz-options').innerHTML = ""; 
     const questionEl = document.getElementById('question'); 
     const nextQuestionData = questionsData.find(question => question.id === idQuestion);
@@ -178,3 +178,5 @@ export function showQuestion(idQuestion, numberOfChoices) {
 
     document.querySelector('.quiz-options').appendChild(cloneTemplate);
 }
+
+module.exports = showQuestion; 
