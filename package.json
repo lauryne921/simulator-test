@@ -6,6 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es6"
+  },  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lauryne921/simulator-test.git"

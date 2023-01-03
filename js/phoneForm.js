@@ -1,4 +1,6 @@
-const questions = [
+import { showQuestion } from "./script";
+
+const questionsData = [
 	{
 		id: 1, 
 		value: "Vous souhaitez qu'Acasi vous aide à choisir votre nouveau statut ?", 
@@ -79,11 +81,11 @@ function loadQuestion() {
 
     if (lastQuestion === 3 && lastAnswer === 1 
         || lastQuestion === 4 && lastAnswer === 1) {
-            currentQuestionData = questions[0]; 
+            currentQuestionData = questionsData[0]; 
     } else if (lastQuestion === 4 && lastAnswer === 2) {
-        currentQuestionData = questions[1]; 
+        currentQuestionData = questionsData[1]; 
     } else if (lastQuestion === 5 && lastQuestion === 2) {
-        currentQuestionData = questions[2]; 
+        currentQuestionData = questionsData[2]; 
     } else {
         return window.location.href = "https://www.acasi.io/"; 
     }
@@ -105,7 +107,7 @@ function checkAnswer() {
 
 function getNextQuestion(currentChoice) {
     const nextQuestionId = currentChoice.nextQuestion; 
-    const nextQuestionData = questions.find(question => question.id === nextQuestionId); 
+    const nextQuestionData = questionsData.find(question => question.id === nextQuestionId); 
     const showPhoneNumber = currentChoice.showPhoneNumber; 
 
     if (showPhoneNumber === true) {
@@ -119,29 +121,4 @@ function getNextQuestion(currentChoice) {
     } else {
         questionEl.innerText = nextQuestionData.value;
     }
-}
-
-
-function showQuestion(idQuestion, numberOfChoices) {
-    document.querySelector('.quiz-options').innerHTML = ""; 
-    const questionEl = document.getElementById('question'); 
-    const nextQuestionData = questions.find(question => question.id === idQuestion);
-    const template = document.querySelector(`.answers-template[data-number-of-choices='${numberOfChoices}']`);
-
-    const cloneTemplate = document.importNode(template.content, true); 
-    const templateAnswers = cloneTemplate.querySelectorAll('.answerBlock'); 
-
-    questionEl.innerText = nextQuestionData.value;
-    
-    templateAnswers.forEach((answer, index) => {
-        const { id, value } = nextQuestionData.choices[index]; 
-        const input = answer.querySelector('.input-answer'); 
-        input.setAttribute('id', id); 
-
-        const label = answer.querySelector('.answer'); 
-        label.textContent = value;
-        label.setAttribute('for', id); 
-    }); 
-
-    document.querySelector('.quiz-options').appendChild(cloneTemplate);
 }
