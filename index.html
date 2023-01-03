@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz Simulateur V3</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="quiz-body">
+            <h2 class="quiz-question" id="question"></h2>
+            <input type="hidden" id="currentQuestion" value="0" />
+            <ul class="quiz-options">
+
+            </ul>
+            <template class="answers-template" data-number-of-choices="2">
+                <li class="answerBlock">
+                    <input type="radio" name="answer" id="1of2" class="input-answer" onclick="checkAnswer()" />
+                    <label for="1of2" class="answer">Choice 1</label>
+                </li>
+                <li class="answerBlock">
+                    <input type="radio" name="answer" id="2of2" class="input-answer" onclick="checkAnswer()" />
+                    <label for="2of2" class="answer">Choice 2</label>
+                </li>
+            </template>
+            <template class="answers-template" data-number-of-choices="3">
+                <li class="answerBlock">
+                    <input type="radio" name="answer" id="1of3" class="input-answer" onclick="checkAnswer()" />
+                    <label for="1of3" class="answer">Choice 1</label>
+                </li>
+                <li class="answerBlock">
+                    <input type="radio" name="answer" id="2of3" class="input-answer" onclick="checkAnswer()" />
+                    <label for="2of3" class="answer">Choice 2</label>
+                </li>
+                <li class="answerBlock">
+                    <input type="radio" name="answer" id="3of3" class="input-answer" onclick="checkAnswer()" />
+                    <label for="3of3" class="answer">Choice 3</label>
+                </li>
+            </template>
+            <template class="answers-template" data-number-of-choices="4">
+                <li class="answerBlock">
+                    <input type="radio" name="answer" id="1of4" class="input-answer" onclick="checkAnswer()" />
+                    <label for="1of4" class="answer">Choice 1</label>
+                </li>
+                <li class="answerBlock">
+                    <input type="radio" name="answer" id="2of4" class="input-answer" onclick="checkAnswer()" />
+                    <label for="2of4" class="answer">Choice 2</label>
+                </li>
+                <li class="answerBlock">
+                    <input type="radio" name="answer" id="3of4" class="input-answer" onclick="checkAnswer()" />
+                    <label for="3of4" class="answer">Choice 3</label>
+                </li>
+                <li class="answerBlock">
+                    <input type="radio" name="answer" id="4of4" class="input-answer" onclick="checkAnswer()" />
+                    <label for="4of4" class="answer">Choice 4</label>
+                </li>
+            </template>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>

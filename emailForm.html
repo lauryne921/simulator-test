@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Résultats</title>
+</head>
+<body>
+    <div class="wrapper">
+        <form action="" class="form" id="form-email">
+            <h1>Formulaire</h1>
+            <label for="email">Quel est votre adresse mail ?</label>
+            <input type="email" name="email" id="email" placeholder="Votre email" class="input-form" />
+        </form>
+        <button class="view-answer">Voir la réponse</button>
+        <div id="container-final-answer" class="hidden">
+            <div id="final-answer">
+                <template id="answer-one">
+                    <p>Vous allez dépasser le seuil de la franchise de TVA cette année. Vous serez donc assujetti à la TVA dès le premier euro de dépassement.</p>
+                    <p>Cela signifie que vous allez devoir facturer la TVA à vos clients. Or, l'assujettissement à la TVA n'est pas avantageux lorsque vos clients sont des particuliers.</p>
+                    <p>En effet, les particuliers ne peuvent pas facutrer la TVA. Ce qui donne la situation suivante : d'un côté vous collectez de la TVA en achetant des biens et services, de l'autre côté vous ne la déduisez pas en la facturant à vos clients. Vous vous retrouvez alors avec des montants importants de TVA encaissée à reverser à l'Etat.</p>
+                    <p>Nous vous conseillons de sortir du régime de la micro-entreprise et passer à l'entreprise individuelle ou de créer une société.</p>
+                </template>
+                <template id="answer-two">
+                    <p>Le régime de micro-entrepreneur est un régime où les charges sont déterminées de manière forfaitaire.</p>
+                    <p>En effet, vous bénéficiez automatiquement de 34% d'abattement sur votre CA, au titre de vos charges.</p>
+                    <p>Dans le cas où les charges sont supérieures à 34%, il est plus avantageux de passer au régime réel.</p>
+                </template>
+                <template id="answer-three">
+                    <p>Vous n'eêtes pas sur le point de dépasser les seuils de CA qui vous obligeraient à sortir du régime de la micro-entreprise.</p>
+                    <p>Vous pouvez continuez à exercer votre activité en auto-entrepreneur.</p>
+                </template>
+                <template id="answer-four">
+                    <p>Vous allez dépasser le seuil de la franchise de TVA cette année. Vous aurez donc l'obligation de facturer la TVA à vos clients, dès le premier euro de dépassement. Vos clients étant des professionnels, eux-mêmes assujettis à la TVA, cette taxe est neutre pour vous.</p>
+                    <p>Ce dépassement entraînera pour vous l'obligation de nouvelles tâches comme l'obligation de déclarer votre TVA tous les mois ou tous les trimestres selon le régime fiscal.</p>
+                </template>
+                <template id="answer-five">
+                    <p>Attention, vous allez dépasser les seuils de CA durant deux années consécutives. Vous serez donc obligés de sortir du régime de la micro-entreprise et passer à un autre statut.</p>
+                </template>
+            </div>
+            <button id="suite-btn">Suite</button>
+        </div>
+    </div>
+    <script src="./js/emailForm.js"></script>
+</body>
+</html>

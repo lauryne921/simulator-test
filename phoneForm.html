@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Résultats</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h2 id="question"></h2>
+        <ul class="quiz-options">
+
+        </ul>
+        <template class="answers-template" data-number-of-choices="2">
+            <li class="answerBlock">
+                <input type="radio" name="answer" id="1of2" class="input-answer" onclick="checkAnswer()" />
+                <label for="1of2" class="answer">Choice 1</label>
+            </li>
+            <li class="answerBlock">
+                <input type="radio" name="answer" id="2of2" class="input-answer" onclick="checkAnswer()" />
+                <label for="2of2" class="answer">Choice 2</label>
+            </li>
+        </template>
+        <a href="https://www.acasi.io/"><button id="acasi-btn" class="hidden">Acasi</button></a>
+        <div id="phone" class="hidden">
+            <form action="" class="form">
+                <label for="phone">Entrez votre numéro de téléphone</label>
+                <input type="tel" name="phone" id="phone" placeholder="Votre téléphone" class="input-form" />
+            </form>
+        </div>
+    </div>
+    <script src="./js/phoneForm.js"></script>
+</body>
+</html>
