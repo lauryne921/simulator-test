@@ -18,8 +18,6 @@ viewAnswerBtn.addEventListener('click', () => {
     }
 });
 
-console.log(document.getElementById('suite-btn')); 
-
 document.getElementById('suite-btn').addEventListener('click', () => {
     window.location.href = "/phoneForm.html";  
 }); 

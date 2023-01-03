@@ -179,4 +179,3 @@ function showQuestion(idQuestion, numberOfChoices) {
     document.querySelector('.quiz-options').appendChild(cloneTemplate);
 }
 
-module.exports = showQuestion; 
