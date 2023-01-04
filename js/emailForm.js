@@ -1,11 +1,9 @@
 const viewAnswerBtn = document.querySelector('.view-answer'); 
 const emailInput = document.getElementById('email');
 
-// const currentQuestionData = questions[0]; 
-// const quizOptions = document.querySelector('.quiz-options'); 
-
 const finalAnswer = document.getElementById('final-answer');
-const containerFinalAnswer = document.getElementById('container-final-answer');  
+const containerFinalAnswer = document.getElementById('container-final-answer'); 
+
 
 viewAnswerBtn.addEventListener('click', () => {
     if (emailInput.value === "") {

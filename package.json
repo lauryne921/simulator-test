@@ -4,7 +4,6 @@
   "description": "",
   "type": "module",
   "main": "script.js",
-  "module": "CommonJS",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,8 +16,5 @@
   "bugs": {
     "url": "https://github.com/lauryne921/simulator-test/issues"
   },
-  "homepage": "https://github.com/lauryne921/simulator-test#readme",
-  "dependencies": {
-    "esm": "^3.2.25"
-  }
+  "homepage": "https://github.com/lauryne921/simulator-test#readme"
 }
