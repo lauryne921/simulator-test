@@ -2,12 +2,12 @@
   "name": "simulator-test",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "type": "module",
+  "main": "script.js",
+  "module": "CommonJS",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "module": "commonjs",  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lauryne921/simulator-test.git"
@@ -16,6 +16,9 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/lauryne921/simulator-test/issues"
-  }, 
-  "homepage": "https://github.com/lauryne921/simulator-test#readme"
+  },
+  "homepage": "https://github.com/lauryne921/simulator-test#readme",
+  "dependencies": {
+    "esm": "^3.2.25"
+  }
 }
