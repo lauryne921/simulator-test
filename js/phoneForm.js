@@ -121,7 +121,7 @@ function getNextQuestion(currentChoice) {
     }
 }
 
-
+/*
 function showQuestion(idQuestion, numberOfChoices) {
     document.querySelector('.quiz-options').innerHTML = ""; 
     const questionEl = document.getElementById('question'); 
@@ -144,4 +144,4 @@ function showQuestion(idQuestion, numberOfChoices) {
     }); 
 
     document.querySelector('.quiz-options').appendChild(cloneTemplate);
-}
+}*/
